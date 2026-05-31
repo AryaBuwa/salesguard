@@ -42,17 +42,44 @@ def search_linkup_node(state: AgentState) -> AgentState:
     company_lower = state['company'].lower().replace(' ', '')
 
     official_domain = None
-    for r in results:
-        url = r.get("url", "")
-        if not url: continue
-        domain = url.split("/")[2].replace("www.", "") if len(url.split("/")) > 2 else ""
-        domain_base = domain.split(".")[0]
-        if domain_base == company_lower.replace(" ", "") or domain_base == company_lower.replace(" ", "-"):
-            official_domain = domain
-            break
+    try:
+        web_response = client.search(
+            query=f"{state['company']} official website",
+            depth="standard",
+            output_type="searchResults"
+        )
+        for r in web_response.results[:5]:
+            url = getattr(r, "url", "")
+            if url:
+                domain = url.split("/")[2] if len(url.split("/")) > 2 else ""
+                domain_lower = domain.lower()
+                invalid_domains = [
+                    "linkedin.com", "facebook.com", "twitter.com", "x.com", 
+                    "wikipedia.org", "crunchbase.com", "github.com", "youtube.com",
+                    "instagram.com", "pinterest.com", "reddit.com", "glassdoor.com"
+                ]
+                if not any(x in domain_lower for x in invalid_domains):
+                    official_domain = domain.replace("www.", "")
+                    break
+    except Exception as e:
+        print("Homepage search error:", e)
+
+    # Fallback to scanning search results
+    if not official_domain:
+        company_raw = state['company'].lower()
+        company_clean = company_raw.replace(' ', '')
+        company_hyphen = company_raw.replace(' ', '-')
+        for r in results:
+            url = r.get("url", "")
+            if not url: continue
+            domain = url.split("/")[2].replace("www.", "") if len(url.split("/")) > 2 else ""
+            domain_base = domain.split(".")[0]
+            if domain_base == company_clean or domain_base == company_hyphen:
+                official_domain = domain
+                break
 
     domain_guess = official_domain or f"{company_lower}.com"
-    state["logo"] = f"https://www.google.com/s2/favicons?domain={domain_guess}&sz=128"
+    state["logo"] = f"https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://{domain_guess}&size=128"
     state["homepage"] = f"https://{official_domain}" if official_domain else f"https://www.{company_lower}.com"
 
     try:

@@ -345,6 +345,26 @@ function WaitlistForm() {
   );
 }
 
+function CompanyLogo({ logo, company }) {
+  const [failed, setFailed] = useState(false);
+  if (failed || !logo) {
+    return (
+      <div style={{ width: 48, height: 48, borderRadius: 12, background: "#6366f120",
+        border: "1px solid #6366f140", display: "flex", alignItems: "center", justifyContent: "center",
+        color: "#6366f1", fontSize: 20, fontWeight: 600, textTransform: "uppercase" }}>
+        {company ? company[0] : "C"}
+      </div>
+    );
+  }
+  return (
+    <div style={{ width: 48, height: 48, borderRadius: 12, background: "#fff",
+      display: "flex", alignItems: "center", justifyContent: "center", overflow: "hidden", border: "1px solid #ffffff20" }}>
+      <img src={logo} style={{ maxWidth: "100%", maxHeight: "100%", objectFit: "contain" }}
+        onError={() => setFailed(true)} />
+    </div>
+  );
+}
+
 export default function App() {
   const [query, setQuery] = useState("");
   const [loading, setLoading] = useState(false);
@@ -466,13 +486,7 @@ export default function App() {
           {/* Company Header */}
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end" }}>
             <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
-              {data.logo && (
-                <div style={{ width: 48, height: 48, borderRadius: 12, background: "#fff",
-                  display: "flex", alignItems: "center", justifyContent: "center", overflow: "hidden", border: "1px solid #ffffff20" }}>
-                  <img src={data.logo} style={{ maxWidth: "100%", maxHeight: "100%" }}
-                    onError={e => e.target.parentElement.style.display = "none"} />
-                </div>
-              )}
+              <CompanyLogo logo={data.logo} company={data.company} />
               <div>
                 <div style={{ fontSize: 24, fontWeight: 600, letterSpacing: "-0.5px", marginBottom: 4 }}>{data.company}</div>
                 <div style={{ display: "flex", gap: 12 }}>
