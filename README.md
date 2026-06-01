@@ -29,15 +29,25 @@ Linkup powers two searches per query:
 - Frontend: React + Vite, jsPDF
 
 ## Run Locally
-### Backend
+Follow these steps to set up and run the application on your machine. You will need two separate terminal windows.
+
+## 1. Backend Setup
+Navigate to the backend directory, install the required Python packages, and launch the FastAPI server:
+
+```bash
 cd backend
 pip install -r requirements.txt
 uvicorn main:app --port 8001 --reload
+```
 
-### Frontend
+## 2. Frontend Setup
+Open a new terminal window, navigate to the frontend directory, install the Node dependencies, and start the React development server: 
+
+```bash
 cd frontend
 npm install
 npm run dev
+```
 
 ### Environment Variables
 Create a `.env` file in the following directories:
