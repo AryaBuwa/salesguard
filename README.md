@@ -39,16 +39,24 @@ cd frontend
 npm install
 npm run dev
 
-## Environment Variables
-LINKUP_API_KEY=your_key
-GROQ_API_KEY=your_key
-VITE_API_URL=http://localhost:8001
+### Environment Variables
+Create a `.env` file in the following directories:
+
+**Backend (`/backend/.env`)**
+
+| Variable | Description |
+| :--- | :--- |
+| `LINKUP_API_KEY` | Your API key from Linkup |
+| `GROQ_API_KEY` | Your API key from Groq |
+
+**Frontend (`/frontend/.env`)**
+
+| Variable | Description |
+| :--- | :--- |
+| `VITE_API_URL` | The backend URL (e.g., `http://localhost:8001`) |
 
 ## Live Demo
 https://salesguard.vercel.app/
-
-## Demo Video
-[Loom link here]
 
 ## Built By
 Arya — Team "Back-Spaced - solo developer — Linkup Async Hackathon 2026
