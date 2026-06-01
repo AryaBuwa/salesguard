@@ -49,7 +49,7 @@ npm install
 npm run dev
 ```
 
-### Environment Variables
+## Environment Variables
 Create a `.env` file in the following directories:
 
 **Backend (`/backend/.env`)**
