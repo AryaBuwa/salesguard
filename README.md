@@ -25,7 +25,7 @@ Linkup powers two searches per query:
 - Copy suggestions to clipboard
 
 ## Tech Stack
-- Backend: FastAPI, LangGraph, Groq llama-3.3-70b, Linkup API
+- Backend: FastAPI, LangGraph, Groq openai/gpt-oss-120b, Linkup API
 - Frontend: React + Vite, jsPDF
 
 ## Run Locally
