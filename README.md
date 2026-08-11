@@ -1,6 +1,11 @@
 # SalesGuard
 > Real-time sales intelligence before every call.
 
+## Upcoming Updates (Scheduled Till 15th August)
+1. Updated risk scoring.
+2. Verified pages/website loading with confidence score.
+3. Web-Search fix and updates.
+
 ## Problem
 Sales reps waste 30-45 minutes researching companies before calls.
 SalesGuard does it in 30 seconds.
