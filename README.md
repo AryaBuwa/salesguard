@@ -6,6 +6,12 @@
 2. Verified pages/website loading with confidence score.
 3. Web-Search fix and updates.
 
+## Current Progress (Updated on 12th August 2026 22:22)
+1. Web search returning correct logo and linkedin profiles
+2. The Web search isn't correctly working. It's working sometimes but sometimes it's not fetching the correct websites.
+3. The chatbot logic update and updating guardrails with more wider and stricter policy. 
+4. Risk Scoring math working properly while testing.(still under tests)
+
 ## Problem
 Sales reps waste 30-45 minutes researching companies before calls.
 SalesGuard does it in 30 seconds.
