@@ -2,16 +2,16 @@
 > Real-time sales intelligence before every call.
 
 ## Upcoming Updates (Scheduled Till 15th August)
-1. Updated risk scoring.
-2. Verified pages/website loading with confidence score.
-3. Web-Search fix and updates.
+1. Updated risk scoring. ✔ (done) 
+2. Verified pages/website loading with confidence score. (still buffering)
+3. Web-Search fix and updates. 
 
-## Current Progress (Updated on 13th August 2026 22:00)
-1. Web search results again broke and affecting the report. 
-2. Implemented TLD-strip fix for official domain seperation, didn't work. now even the normal searches aren't showing correct linkedin and official company website. 
-3. Probably gonna restart the updates from start.
-4. The chatbot logic update and updating guardrails with more wider and stricter policy. 
-5. Risk Scoring math working properly while testing.(still under tests)
+## Current Progress (Updated on 14th August 2026 21:00)
+1. Web search results again broke and affecting the report. (reports are fine its just wrong searches problem now.)
+2. Implemented TLD-strip fix for official domain seperation again with few domain names pre-added, kind of worked but again faulty/wrong search results multiple times. I think I have to scrap this idea.   
+3. Probably gonna restart the updates from start, because TLD-strip failed. Again! (updated on 14th August 2026 20:34)
+4. The chatbot logic update and updating guardrails with more wider and stricter policy. ✔ (done)
+5. Risk Scoring math working properly and showing correct scores. ✔ (done)
 
 ## Problem
 Sales reps waste 30-45 minutes researching companies before calls.
