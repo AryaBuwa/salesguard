@@ -1,15 +1,15 @@
 # SalesGuard
 > Real-time sales intelligence before every call.
 
-## Upcoming Updates (Scheduled Till 15th August)
+## Upcoming Updates (Scheduled Till 15th August extended to 18th August) 
 1. Updated risk scoring. ✔ (done) 
-2. Verified pages/website loading with confidence score. (still buffering)
-3. Web-Search fix and updates. 
+2. Verified pages/website loading with confidence score. (works 7/10 times correctly trying to increase it to 9/10 times)
+3. Web-Search fix ✔ (done) and updates.(upcoming till new deadline.) 
 
-## Current Progress (Updated on 14th August 2026 21:00)
-1. Web search results again broke and affecting the report. (reports are fine its just wrong searches problem now.)
-2. Implemented TLD-strip fix for official domain seperation again with few domain names pre-added, kind of worked but again faulty/wrong search results multiple times. I think I have to scrap this idea.   
-3. Probably gonna restart the updates from start, because TLD-strip failed. Again! (updated on 14th August 2026 20:34)
+## Current Progress (Updated on 15th August 2026 20:25)
+1. Web search results are fixed now it works 7/10 times insted of 2/10 times. probably taking towards 9/10 correct results. but let's see. 
+2. Now the problem is the logo fetching is not working. fixable but need more time to check.   
+3. Probably gonna fix the logo and overall LLM prompt. (updated on 15th August 2026 20:24)
 4. The chatbot logic update and updating guardrails with more wider and stricter policy. ✔ (done)
 5. Risk Scoring math working properly and showing correct scores. ✔ (done)
 
