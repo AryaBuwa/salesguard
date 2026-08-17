@@ -6,10 +6,10 @@
 2. Verified pages/website loading with confidence score. (works 7/10 times correctly trying to increase it to 9/10 times)
 3. Web-Search fix ✔ (done) and updates.(upcoming till new deadline.) 
 
-## Current Progress (Updated on 16th August 2026 20:05)
-1. Web search results are fixed now it works 7/10 times insted of 2/10 times. probably taking towards 9/10 correct results. but let's see. (no work on web search results today on August 16th) 
-2. Now the problem is the logo fetching is not working. Tried two fixes but it's working 5/10 times.    
-3. Probably gonna fix the logo and overall LLM prompt. (updated on 16th August 2026 20:04)
+## Current Progress (Updated on 17th August 2026 20:05)
+1. Web search results are fixed now it works 7/10 times insted of 2/10 times. probably taking towards 9/10 correct results. but let's see. (no work on web search results today on August 17th) 
+2. Now the problem is the logo fetching which is still not working.     
+3. Probably gonna fix the logo again tomorrow (updated on 17th August 2026 21:42)
 4. The chatbot logic update and updating guardrails with more wider and stricter policy. ✔ (done)
 5. Risk Scoring math working properly and showing correct scores. ✔ (done)
 6. LLM chatbot upgrade with some new features. (upcoming)
