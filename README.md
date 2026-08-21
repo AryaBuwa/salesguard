@@ -3,16 +3,17 @@
 
 ## Upcoming Updates (Scheduled Till 15th August extended to 21st August) 
 1. Updated risk scoring. ✔ (done) 
-2. Verified pages/website loading with confidence score. (works 7/10 times correctly trying to increase it to 9/10 times)
+2. Verified pages/website loading with confidence score. (works 7/10 times) ✔ (done) 
 3. Web-Search fix ✔ (done) and updates.(upcoming till new deadline.) 
 
-## Current Progress (Updated on 18th August 2026 21:25)
-1. Web search results are fixed now it works 7/10 times insted of 2/10 times. probably taking towards 9/10 correct results. but let's see. (no work on web search results today on August 18th)  
+## Current Progress (Updated on 21sh August 2026 22:22)
+1. Web search results are fixed now it works 7/10 times. ✔ (done) 
 2. The logo fetching. ✔ (done)     
 3. Logo fix. ✔ (done)
 4. The chatbot logic update and updating guardrails with more wider and stricter policy. ✔ (done)
 5. Risk Scoring math working properly and showing correct scores. ✔ (done)
-6. LLM chatbot upgrade with some new features. ((Partially Updated) but still checking if it's good or bad update)
+6. LLM chatbot upgrade with some new features.✔ (done) 
+7. Just did some minimal UI changes which are bugged, will fix it shortly. 
 
 ## Problem
 Sales reps waste 30-45 minutes researching companies before calls.
