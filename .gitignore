@@ -22,3 +22,6 @@ dist-ssr/
 .DS_Store
 .vscode/
 .idea/
+
+# AI Context File
+CONTEXT.md
