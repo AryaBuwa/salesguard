@@ -86,6 +86,20 @@ function NewsCard({ item }) {
       <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 8 }}>
         {item.favicon && <img src={item.favicon} width={14} height={14} style={{ borderRadius: 3 }} onError={e => e.target.style.display = "none"} />}
         <span style={{ color: "#71717a", fontSize: 12 }}>{domain}</span>
+        {item.verified ? (
+          <span style={{ display: "inline-flex", alignItems: "center", gap: 4,
+            background: "rgba(34,197,94,0.1)", border: "1px solid rgba(34,197,94,0.25)",
+            borderRadius: 999, padding: "2px 8px", color: "#22c55e", fontSize: 10, fontWeight: 600 }}>
+            <span style={{ fontFamily: "Material Symbols Outlined", fontSize: 11 }}>verified</span>
+            Verified Source
+          </span>
+        ) : (
+          <span style={{ display: "inline-flex", alignItems: "center",
+            background: "#ffffff06", border: "1px solid #ffffff0f",
+            borderRadius: 999, padding: "2px 8px", color: "#71717a", fontSize: 10, fontWeight: 500 }}>
+            Unverified
+          </span>
+        )}
       </div>
       <div style={{ color: "#ededed", fontSize: 14, fontWeight: 500, marginBottom: 6, lineHeight: 1.5 }}>{item.name}</div>
       <div style={{ color: "#a1a1aa", fontSize: 13, lineHeight: 1.6 }}>{item.content?.slice(0, 160)}...</div>
