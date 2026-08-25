@@ -110,7 +110,9 @@ Create a `.env` file in the following directories:
 | `VITE_API_URL` | The backend URL (e.g., `http://localhost:8001`) |
 
 ## Live Demo
+
 https://salesguard.vercel.app/
 
 ## Built By
+
 Arya — Team "Back-Spaced - solo developer — Linkup Async Hackathon 2026
