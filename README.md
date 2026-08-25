@@ -38,20 +38,24 @@
   legitimate niche/regional outlets not yet added.  
 
 ## Problem
+
 Sales reps waste 30-45 minutes researching companies before calls.
 SalesGuard does it in 30 seconds.
 
 ## Solution
+
 Type a company name. SalesGuard fetches live news via Linkup deep search,
 scores risk using a custom algorithm, and generates personalized outreach
 strategies using Groq's LLM.
 
 ## How Linkup Is Used
+
 Linkup powers two searches per query:
 1. Deep search for company news, financials, and risk signals
 2. Standard search to find the official LinkedIn company page
 
 ## Features
+
 - Real-time risk scoring (5-95) from live news
 - AI-generated executive summary
 - 6-9 personalized outreach suggestions
@@ -61,10 +65,13 @@ Linkup powers two searches per query:
 - Copy suggestions to clipboard
 
 ## Tech Stack
-- Backend: FastAPI, LangGraph, Groq openai/gpt-oss-120b, Linkup API
-- Frontend: React + Vite, jsPDF
+
+Backend: FastAPI + LangGraph + LangChain, Linkup API for web search, Groq (openai/gpt-oss-120b) for analysis
+Frontend: React + Vite
+Deployment: Render (backend), Vercel (frontend)
 
 ## Run Locally
+
 Follow these steps to set up and run the application on your machine. You will need two separate terminal windows.
 
 ## 1. Backend Setup
@@ -86,6 +93,7 @@ npm run dev
 ```
 
 ## Environment Variables
+
 Create a `.env` file in the following directories:
 
 **Backend (`/backend/.env`)**
