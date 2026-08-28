@@ -48,6 +48,32 @@ Type a company name. SalesGuard fetches live news via Linkup deep search,
 scores risk using a custom algorithm, and generates personalized outreach
 strategies using Groq's LLM.
 
+## How It Works
+
+```mermaid
+flowchart LR
+    A[Sales User] --> B[SalesGuard]
+
+    B --> C[Live Web Search]
+    C --> D[Web Sources]
+
+    D --> E[AI Analysis]
+
+    E --> F[Signals]
+    E --> G[Opportunities]
+    E --> H[Risks]
+
+    F --> I[Sales Intelligence]
+    G --> I
+    H --> I
+
+    I --> J[Recommended Actions]
+    I --> K[AI Sales Brief]
+
+    J --> L[Sales Decision]
+    K --> L
+
+
 ## How Linkup Is Used
 
 Linkup powers two searches per query:
