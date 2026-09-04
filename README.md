@@ -72,7 +72,7 @@ flowchart LR
 
     J --> L[Sales Decision]
     K --> L
-
+```
 
 ## How Linkup Is Used
 
